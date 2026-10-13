@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickNotes API Client</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="api.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>QuickNotes Online Service</h1>
+    <p>Connected to Live Server API</p>
+  </header>
+
+  <main>
+    <!-- Load Section -->
+    <section class="card">
+      <h2>Server Notes</h2>
+      <button id="load-btn">Load Notes</button>
+      <p id="status">Click "Load Notes" to fetch from server.</p>
+      <ul id="notes-list"></ul>
+    </section>
+
+    <!-- Create Section -->
+    <section class="card">
+      <h2>Create a New Note</h2>
+      <form id="note-form">
+        <label for="title-input">Title (required, max 100 chars):</label>
+        <input type="text" id="title-input" maxlength="100" placeholder="Note title...">
+
+        <label for="body-input">Body (optional):</label>
+        <textarea id="body-input" placeholder="Write your note content..."></textarea>
+
+        <button type="submit" id="submit-btn">Create Note</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 QuickNotes System</p>
+  </footer>
+</body>
+</html>
